@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "variable";
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  font-family: "Helvetica Neue", serif;
+}
+
+
+@mixin title($color) {
+  font-size: 60px;
+  font-weight: bold;
+  color: $color;
+  letter-spacing: 5px;
+}
+
+@mixin subtitle($color) {
+  font-size: 30px;
+  font-weight: normal;
+  color: $color;
+  letter-spacing: 2px;
+}
+
+
+@mixin text($color) {
+  font-size: 20px;
+  font-weight: normal;
+  color: $color;
+  letter-spacing: 1px;
+}
+
+@mixin subtitlebox {
+  background-color: #BED8D1;
+  border-radius: 5px;
+  width: fit-content;
+  text-align: center;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 50px;
+  @include subtitle(black)
+}
+
+@mixin navbox {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  width: 30%;
+  margin: 20px 0 0 10px;
+  padding: 5px;
+  @include subtitle(white);
+  text-align: center;
+  text-decoration: none;
+}
+
+@mixin navboxhover {
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+
+}
+
+

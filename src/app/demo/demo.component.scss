@@ -1,0 +1,175 @@
+.demo {
+  background-color: #F1F1F1;
+  width: 100%;
+  height: 100%;
+  padding: 30px 30px 5vh 60px;
+  color: #363537;
+}
+
+.title {
+  font-size: 60px;
+  letter-spacing: 1px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 40px;
+}
+
+.subtitle {
+  width: 75%;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+
+.flex > div {
+  width: 35em;
+}
+
+.einkaufsliste {
+  background-color: #BED8D1;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.form-check,.bonntitle, .zutaten {
+  font-size: 20px;
+  color: #363537;
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+
+.btn {
+  background-color: #363537;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  width: 15em;
+}
+
+.flexbtn {
+  display: flex;
+  margin: 80px 0 30px 0;
+  justify-content: space-around;
+}
+
+.flexbtn > button {
+  font-size: 18px;
+  width: 12em;
+  padding: 5px 0 5px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #363537;
+  color: #F1F1F1;
+}
+
+.flexbtn > button:hover {
+  background-color: #F1F1F1;
+  color: #363537;
+}
+
+.bonn {
+  border: #363537 solid 1px;
+  border-radius: 5px;
+  background-color: white;
+  margin: 20px;
+}
+
+.bonntitle {
+  text-align: center;
+  padding: 20px;
+}
+
+.zutaten {
+  padding: 20px 20px 0 20px;
+}
+
+.foodprinthead {
+  display: flex;
+  position: relative;
+}
+
+.foodprinttitle {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.world {
+  position: absolute;
+  top: -5px;
+  left: 30px;
+}
+
+.foodprintresult {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin: 30px 0 30px 0 ;
+  color: black;
+  font-size: 20px;
+}
+
+.foodprintunit {
+  width: 15em;
+}
+
+.unit, .value {
+  border-bottom: 1px solid #BED8D1;
+  margin-top: 20px;
+}
+
+
+.foodprintvalue {
+  width: 4em;
+}
+
+.item {
+  display: flex;
+  margin-top: 20px;
+}
+
+.form-check {
+  width: fit-content;
+  margin-right: 10px;
+}
+
+
+.customToolTip .tooltip-inner{
+  white-space: pre-line;
+  background-color: #F1F1F1;
+  color: #363537;
+  font-size: 16px;
+}
+
+
+.customToolTip.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: #F1F1F1;
+}
+
+.customToolTip.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #F1F1F1;
+}
+.customToolTip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #F1F1F1;
+}
+.customToolTip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #F1F1F1;
+}
+
+.info:hover {
+  cursor: pointer;
+}
+
+
+
+

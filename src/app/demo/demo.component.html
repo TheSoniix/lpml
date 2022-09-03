@@ -1,0 +1,81 @@
+<div class="demo">
+  <div class="title">Versuche es selbst!</div>
+  <div class="subtitle">Füge Produkte in deinen Einkaufskorb hinzu und siehe wie sich die Werte verändern.</div>
+  <div class="flex">
+    <div class="einkaufsliste">
+      <h2>Produkt</h2>
+
+
+      <div class="item" *ngFor="let item of einkaufsliste; let i=index">
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="flexCheckChecked{{i}}" [ngModel]="einkaufsliste[i].value"
+                 (change)="onItemChange(i)">
+          <label class="form-check-label" for="flexCheckChecked{{i}}">
+            {{i}} {{einkaufsliste[i].name}}</label>
+        </div>
+
+        <div class="info" [placement]="['right', 'top']" ngbTooltip="Plastik: {{item.plastic}}g, &#013; &#010; Recyclebar: {{item.recyclable}}g, &#013; &#010; Mikroplastik: {{item.microplastic}}g, &#013; &#010; Gesundheitsg.: {{item.hazardousToHealth}}g" [animation]="true" tooltipClass="customToolTip" triggers="click:blur">
+          <svg class="i" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 30.596 30.596">
+            <path id="ic_info_outline_24px" d="M15.768,24.947h3.06V15.768h-3.06ZM17.3,2A15.3,15.3,0,1,0,32.6,17.3,15.3,15.3,0,0,0,17.3,2Zm0,27.536A12.238,12.238,0,1,1,29.536,17.3,12.255,12.255,0,0,1,17.3,29.536Zm-1.53-16.828h3.06V9.649h-3.06Z" transform="translate(-2 -2)" fill="#363537"/>
+          </svg>
+
+        </div>
+
+      </div>
+
+      <div class="flexbtn">
+        <button class="" (click)="checkAllItems()">Alle Anhaken</button>
+        <button class="" (click)="uncheckAllItems()">Alle Entfernen</button>
+      </div>
+
+
+    </div>
+
+
+    <div class="bonn">
+      <div class="bonntitle">
+        Mustermann GmbH<br>
+        Mustermannstraße 123 <br>
+        123456 Musterstadt
+        <hr>
+      </div>
+
+      <div class="zutaten">
+        Eine Liste der gekauften Zutaten <br>
+        ...
+        <hr>
+      </div>
+
+      <div class="foodprint">
+        <div class="foodprinthead">
+          <svg class="world" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 40 40">
+            <path id="ic_public_24px"
+                  d="M18.794,2A16.794,16.794,0,1,0,35.588,18.794,16.8,16.8,0,0,0,18.794,2ZM17.115,32.112A13.416,13.416,0,0,1,5.359,18.794a13.633,13.633,0,0,1,.353-3.006l8.044,8.044v1.679a3.369,3.369,0,0,0,3.359,3.359ZM28.7,27.846a3.332,3.332,0,0,0-3.191-2.334H23.832V20.473a1.684,1.684,0,0,0-1.679-1.679H12.076V15.435h3.359a1.684,1.684,0,0,0,1.679-1.679V10.4h3.359a3.369,3.369,0,0,0,3.359-3.359V6.35a13.405,13.405,0,0,1,4.87,21.5Z"
+                  transform="translate(-2 -2)" fill="#bed8d1"/>
+          </svg>
+          <div class="foodprinttitle">Ihr Abdruck durch Ihren Einkauf</div>
+        </div>
+
+        <div class="foodprintresult">
+          <div class="foodprintunit">
+            <h5>Units</h5>
+            <div class="unit">Plastik:</div>
+            <div class="unit">- davon recyclebar:</div>
+            <div class="unit">Mikroplastik:</div>
+            <div class="unit">Gesundheitsgefährdend:</div>
+          </div>
+          <div class="foodprintvalue">
+            <h5>Values</h5>
+            <div class="value">{{this.plastic}}g</div>
+            <div class="value">{{this.recyclable}}g</div>
+            <div class="value">{{this.microplastic}}g</div>
+            <div class="value">{{this.hazardousToHealth}}g</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

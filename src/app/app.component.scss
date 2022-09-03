@@ -1,0 +1,15 @@
+.goHome {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: #BED8D1 solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+.goHome:hover {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}

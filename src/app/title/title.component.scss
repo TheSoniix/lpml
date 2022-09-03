@@ -1,0 +1,80 @@
+@import "../../styles";
+
+.bg-img {
+  background-image: url("../../../src/assets/images/PlastikOceanA.jpeg");
+  height: 50em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.conti {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.topnav {
+  margin-left: 2vw;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav a {
+  @include navbox;
+}
+
+.topnav a:hover {
+  @include navboxhover
+}
+
+.logo {
+  background-image: url("../../../src/assets/images/LessPlastic_LogoRund.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.title {
+  position: absolute;
+  left: 10px;
+  top: 30%;
+  color: white;
+  margin: 20px;
+  height: auto;
+  width: auto;
+  padding: 30px;
+  border-radius: 5px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.titletext {
+  @include title(white);
+}
+
+.quote {
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.quoteaut {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+
