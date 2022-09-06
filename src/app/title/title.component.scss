@@ -1,12 +1,13 @@
 @import "../../styles";
 
+
+
 .bg-img {
   background-image: url("../../../src/assets/images/PlastikOceanA.jpeg");
   height: 50em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   position: relative;
 }
 
@@ -31,20 +32,17 @@
   @include navboxhover
 }
 
-.logo {
-  background-image: url("../../../src/assets/images/LessPlastic_LogoRund.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
+.logo {
   position: absolute;
   right: 0;
   top: 0;
   margin: 10px;
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
 }
+
 
 .title {
   position: absolute;
@@ -76,5 +74,119 @@
   letter-spacing: 1px;
   margin-top: 10px;
 }
+
+nav {
+  z-index: 1000;
+  box-shadow: 0 5px 10px lightgray;
+}
+
+/* header on default */
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 5px 10px lightgray;
+}
+
+/* button on default */
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* Navigation on default */
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: hsl(0, 0%, 0%, 0.75);
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+/* if blur is supported */
+@supports (backdrop-filter: blur(1rem)) {
+  .primary-navigation {
+    background: hsl(0, 0%, 100%, 0.6);
+    backdrop-filter: blur(1rem);
+  }
+
+  .buttons {
+    color: #697A6E;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+  }
+  .primary-header {
+    display: block;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .primary-navigation {
+    z-index: 1000;
+    position: fixed;
+    inset: 0 0 0 45%;
+    flex-direction: column;
+    padding: min(30vh, 8rem) 2rem;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+
+  .primary-navigation > li {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #BED8D1;
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    width: 5vw;
+    border: 0;
+    aspect-ratio: 1;
+    top: 4em;
+    right: 1em;
+    z-index: 10000;
+    background: transparent url("../../../src/assets/images/menu_white.svg") no-repeat;
+  }
+
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("../../../src/assets/images/close_green.svg");
+  }
+
+}
+
+@media screen and (max-width: 550px){
+  .quote, .quoteaut {
+    display: none;
+  }
+}
+
+
 
 

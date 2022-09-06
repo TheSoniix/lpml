@@ -26,7 +26,8 @@
 
 
 .flex > div {
-  width: 35em;
+  max-width: 35em;
+  width: 100%;
 }
 
 .einkaufsliste {

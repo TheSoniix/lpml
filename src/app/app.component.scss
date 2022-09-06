@@ -5,11 +5,13 @@
   border: #BED8D1 solid 1px;
   border-radius: 10px;
   padding: 10px;
+  z-index: 100;
+  background-color: white;
+  //border: none;
 }
 
 
 .goHome:hover {
   cursor: pointer;
-  background-color: white;
-  border: none;
+
 }

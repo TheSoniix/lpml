@@ -3,18 +3,52 @@
 
     <div class="topnav">
       <a (click)="scrollToFunc('problem')">Das Problem mit Plastik</a>
-      <a (click)="scrollToFunc('mission')">Unsers Mission</a>
+      <a (click)="scrollToFunc('mission')">Unsere Mission</a>
       <a (click)="scrollToFunc('demo')">Live Demo</a>
     </div>
 
-    <div class="logo"></div>
+    <div class="primary-header flexi bg-light">
+
+      <div>
+      </div>
+
+      <button #mobile (click)="mobileToggle(primaryNavigation, mobile)"
+              class="mobile-nav-toggle"
+              aria-controls="primary-navigation"
+              aria-expanded="false">
+      </button>
+
+
+      <nav>
+        <ul #primaryNavigation id="primary-navigation" class="primary-navigation flexi"
+            data-visible="false">
+          <li>
+            <a class="buttons" (click)="scrollToFunc('problem'); mobileToggle(primaryNavigation, mobile)">Das Problem mit Plastik</a>
+          </li>
+          <li>
+            <a class="buttons" (click)="scrollToFunc('mission'); mobileToggle(primaryNavigation, mobile)">Unsere Mission</a>
+          </li>
+          <li>
+            <a class="buttons" (click)="scrollToFunc('demo'); mobileToggle(primaryNavigation, mobile)">Live Demo</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="logo">
+      <img src="assets/images/LessPlastic_LogoRund.png" alt="Logo" class="img-fluid">
+    </div>
 
     <div class="title">
       <div class="titletext">
         Less Plastic. More Life.
       </div>
-      <div class="quote">Der Mensch zerstört sich so lange seine Umwelt, bis er sie sich dann aus Plastik schaffen kann</div>
+      <div class="quote">Der Mensch zerstört sich so lange seine Umwelt, bis er sie sich dann aus Plastik schaffen
+        kann.
+      </div>
       <div class="quoteaut">- Damaris Wiese, deutsche Lyrikerin und Dichterin</div>
     </div>
   </div>
 </div>
+

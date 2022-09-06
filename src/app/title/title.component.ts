@@ -15,4 +15,15 @@ export class TitleComponent {
     this.scrollTo.emit(value);
   }
 
+  mobileToggle(nav: any, mobile: any) {
+    const visi = nav.getAttribute('data-visible')
+    if (visi === 'false') {
+      nav.setAttribute('data-visible', true);
+      mobile.setAttribute('aria-expanded', true)
+    } else {
+      nav.setAttribute('data-visible', false)
+      mobile.setAttribute('aria-expanded', false)
+    }
+  }
+
 }
