@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {DatenschutzComponent} from "../datenschutz/datenschutz.component";
+import {ImpressumComponent} from "../impressum/impressum.component";
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +10,27 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent{
 
-  constructor() { }
+  constructor(public modalService: NgbModal) { }
+
+  openDatenschutz() {
+    const modalRef = this.modalService.open(DatenschutzComponent, {
+      animation: true,
+      centered: true,
+      scrollable: true
+    });
+    modalRef.dismissed.toPromise().then(()=> {})
+  }
+
+
+  openImpressum() {
+    const modalRef = this.modalService.open(ImpressumComponent, {
+      animation: true,
+      centered: true,
+      scrollable: true
+    });
+    modalRef.dismissed.toPromise().then(()=> {})
+  }
+
 
 
 }

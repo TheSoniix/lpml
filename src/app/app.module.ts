@@ -10,6 +10,9 @@ import { ProblemComponent } from './problem/problem.component';
 import { TitleComponent } from './title/title.component';
 import {FormsModule} from "@angular/forms";
 import {AppRoutingModule} from './app-routing.module';
+import { DatenschutzComponent } from './datenschutz/datenschutz.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { ImgComponent } from './img/img.component';
 
 
 
@@ -33,7 +36,10 @@ const routerOptions: ExtraOptions = {
     FooterComponent,
     MissionComponent,
     ProblemComponent,
-    TitleComponent
+    TitleComponent,
+    DatenschutzComponent,
+    ImpressumComponent,
+    ImgComponent
   ],
   imports: [
     BrowserModule,

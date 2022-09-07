@@ -114,7 +114,7 @@ nav {
   }
 
   .buttons {
-    color: #697A6E;
+    color: white;
   }
 }
 
@@ -176,15 +176,25 @@ nav {
 
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url("../../../src/assets/images/close_green.svg");
+    position: fixed;
+    background-image: url("../../../src/assets/images/close_white.svg");
   }
 
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 650px){
   .quote, .quoteaut {
     display: none;
   }
+
+  .title {
+    left: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+  }
+
+
 }
 
 

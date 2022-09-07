@@ -11,22 +11,18 @@ export class AppComponent implements OnInit{
 
   @HostListener("window:scroll", []) onWindowScroll() {
     console.log(this.router.url);
-    if(this.router.url === '/#title') {
-      this.router.navigate([], {fragment: ""});
-    }
+      this.router.navigate([]);
   }
 
   constructor(private router: Router) {
   }
 
   ngOnInit() {
-    this.router.navigate(["/"]);
   }
 
   scrollTo(value: string) {
     switch (value) {
       case "": {
-        this.router.navigate([], {fragment: ""});
         this.router.navigate([], {fragment: "title"});
         break;
       }

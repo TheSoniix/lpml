@@ -6,12 +6,31 @@
   color: white;
 }
 
+.beschr {
+  width: 75%;
+  margin-bottom: 70px;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
 .title {
   font-size: 60px;
   letter-spacing: 1px;
-  margin-bottom: 70px;
 }
 
+span{
+
+  text-decoration: underline;
+}
+
+span:hover {
+  text-shadow: 0 0 10px #F1F1F1;
+  cursor: pointer;
+}
+
+b {
+  color: #BED8D1;
+}
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -39,19 +58,75 @@
   font-size: 20px;
   padding-top: 20px;
   text-align: center;
+  height: 15em;
+}
+
+
+
+/*.vertFlex {
+  display: flex;
+  width: 30%;
+  min-width: 20em;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  justify-content: left;
+}
+
+ */
+
+
+.vertText {
+  width: 30%;
+  min-width: 25em;
+  font-size: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.horzFlex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .icon {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-left: 20px;
 }
 
-.h1 {
-  width: 20vw;
-  background-color: red;
-}
+@media screen and (max-width: 650px){
+  .mission {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-.d-inline-flex {
-  width: 100%;
+  .title {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .flex {
+    width: 100%;
+  }
+
+  .flex > div {
+    width: 100%;
+  }
+
+  .subtitle {
+    padding: 10px;
+  }
+
+  .beschr {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 25px;
+  }
+
+  .vertText {
+    width: 100%;
+    min-width: 0;
+    padding-left: 0;
+    padding-bottom: 40px;
+  }
 }

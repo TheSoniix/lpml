@@ -12,7 +12,7 @@
           <input class="form-check-input" type="checkbox" id="flexCheckChecked{{i}}" [ngModel]="einkaufsliste[i].value"
                  (change)="onItemChange(i)">
           <label class="form-check-label" for="flexCheckChecked{{i}}">
-            {{i}} {{einkaufsliste[i].name}}</label>
+            {{einkaufsliste[i].name}}</label>
         </div>
 
         <div class="info" [placement]="['right', 'top']" ngbTooltip="Plastik: {{item.plastic}}g, &#013; &#010; Recyclebar: {{item.recyclable}}g, &#013; &#010; Mikroplastik: {{item.microplastic}}g, &#013; &#010; Gesundheitsg.: {{item.hazardousToHealth}}g" [animation]="true" tooltipClass="customToolTip" triggers="click:blur">
@@ -42,7 +42,7 @@
       </div>
 
       <div class="zutaten">
-        Eine Liste der gekauften Zutaten <br>
+        Eine Liste der gekauften Produkte <br>
         ...
         <hr>
       </div>

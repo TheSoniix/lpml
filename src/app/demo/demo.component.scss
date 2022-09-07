@@ -62,7 +62,7 @@ h2 {
 
 .flexbtn > button {
   font-size: 18px;
-  width: 12em;
+  width: 10em;
   padding: 5px 0 5px 0;
   border-radius: 10px;
   border: none;
@@ -171,6 +171,60 @@ h2 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 650px){
+  .demo, .subtitle, .title {
+    padding: 30px 10px 0 10px;
+  }
 
+  .einkaufsliste {
+    margin: 30px 0 0 0;
+    width: 80%;
+  }
+
+  .flex {
+    margin: 0;
+  }
+
+  .flexbtn > button {
+    min-width: fit-content;
+  }
+
+  .world {
+    position: static;
+    text-align: center;
+    align-self: center;
+    padding-left: 10px;
+  }
+
+  .foodprintunit {
+    width: 80%;
+  }
+
+  .foodprintvalue {
+    width: 20%;
+  }
+
+  .bonn {
+    margin: 30px 0 0 0;
+    width: 80%;
+  }
+
+  .foodprintresult {
+    padding: 0 10px 0 10px;
+  }
+
+  .demo {
+    padding-bottom: 50px;
+  }
+
+  .title, .subtitle {
+    padding: 30px 0 0 0;
+    width: 100%;
+  }
+
+  .subtitle {
+    font-size: 25px;
+  }
+}
 
 
