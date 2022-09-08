@@ -13,6 +13,7 @@ import {AppRoutingModule} from './app-routing.module';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { ImgComponent } from './img/img.component';
+import { LiteraturComponent } from './literatur/literatur.component';
 
 
 
@@ -39,7 +40,8 @@ const routerOptions: ExtraOptions = {
     TitleComponent,
     DatenschutzComponent,
     ImpressumComponent,
-    ImgComponent
+    ImgComponent,
+    LiteraturComponent
   ],
   imports: [
     BrowserModule,

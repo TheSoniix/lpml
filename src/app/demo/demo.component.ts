@@ -15,14 +15,14 @@ export class DemoComponent {
   hazardousToHealth: number = 0;
   einkaufsliste: Item[] =
     [
-      new Item('Kornflakes', false, 28, 0, 15, 15),
-      new Item('Tomaten', false, 0, 0, 0, 0),
-      new Item('Wasser (Mehrweg-Plastikflasche)', false, 10, 10, 3, 8),
-      new Item('Wasser (Einweg-Plastikflasche)', false, 40, 38, 12, 18),
-      new Item('Chips', false, 10, 0, 10, 10),
-      new Item('Milch', false, 4, 0, 2, 3),
-      new Item('Hackfleisch', false, 10, 0, 2, 2),
-      new Item('Süßigkeit', false, 26, 26, 11, 19),
+      new Item('Cornflakes',        false, 28, 0, 15, 15),
+      new Item('Tomaten',           false, 2, 2, 1, 1),
+      new Item('Wasser (Mehrweg)',  false, 10, 10, 3, 8),
+      new Item('Wasser (Einweg)',   false, 39, 38, 6, 8),
+      new Item('Chips',             false, 13, 0, 5, 7),
+      new Item('Milch',             false, 4, 0, 2, 3),
+      new Item('Pizza',             false, 10, 0, 2, 3),
+      new Item('Süßigkeit',         false, 26, 26, 11, 19),
     ]
 
   constructor() {
@@ -55,7 +55,7 @@ export class DemoComponent {
         this.plastic += item.plastic;
         this.recyclable += item.recyclable;
         this.microplastic += item.microplastic;
-        this.hazardousToHealth += item.microplastic;
+        this.hazardousToHealth += item.hazardousToHealth;
       }
     }
   }

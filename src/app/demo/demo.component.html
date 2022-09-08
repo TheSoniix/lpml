@@ -3,7 +3,7 @@
   <div class="subtitle">Füge Produkte in deinen Einkaufskorb hinzu und siehe wie sich die Werte verändern.</div>
   <div class="flex">
     <div class="einkaufsliste">
-      <h2>Produkt</h2>
+      <h2>Produkte</h2>
 
 
       <div class="item" *ngFor="let item of einkaufsliste; let i=index">
@@ -29,6 +29,7 @@
         <button class="" (click)="uncheckAllItems()">Alle Entfernen</button>
       </div>
 
+      <span><small>* Die Angaben der Produkte sind beispielhaft gewählt</small></span>
 
     </div>
 
@@ -54,14 +55,14 @@
                   d="M18.794,2A16.794,16.794,0,1,0,35.588,18.794,16.8,16.8,0,0,0,18.794,2ZM17.115,32.112A13.416,13.416,0,0,1,5.359,18.794a13.633,13.633,0,0,1,.353-3.006l8.044,8.044v1.679a3.369,3.369,0,0,0,3.359,3.359ZM28.7,27.846a3.332,3.332,0,0,0-3.191-2.334H23.832V20.473a1.684,1.684,0,0,0-1.679-1.679H12.076V15.435h3.359a1.684,1.684,0,0,0,1.679-1.679V10.4h3.359a3.369,3.369,0,0,0,3.359-3.359V6.35a13.405,13.405,0,0,1,4.87,21.5Z"
                   transform="translate(-2 -2)" fill="#bed8d1"/>
           </svg>
-          <div class="foodprinttitle">Ihr Abdruck durch Ihren Einkauf</div>
+          <div class="foodprinttitle">Ihr Abdruck durch den Einkauf</div>
         </div>
 
         <div class="foodprintresult">
           <div class="foodprintunit">
             <h5>Units</h5>
             <div class="unit">Plastik:</div>
-            <div class="unit">- davon recyclebar:</div>
+            <div class="unit">- davon recycelbar:</div>
             <div class="unit">Mikroplastik:</div>
             <div class="unit">Gesundheitsgefährdend:</div>
           </div>
